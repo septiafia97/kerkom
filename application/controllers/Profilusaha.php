@@ -93,6 +93,7 @@ class Profilusaha extends CI_Controller
     public function edit()
     {
         $this->form_validation->set_rules('nama_usaha', 'nama_usaha', 'required');
+        $this->form_validation->set_rules('judul', 'judul', 'required');
         $this->form_validation->set_rules('alamat', 'alamat', 'required');
         $this->form_validation->set_rules('deskripsi', 'deskripsi', 'required');
         $this->form_validation->set_rules('nomor_telepon', 'nomor_telepon', 'numeric|required');

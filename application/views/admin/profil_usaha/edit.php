@@ -35,6 +35,8 @@
                                     <input type="hidden" name="current_id" required value="<?= $ps['id'] ?>">
                                     <label>Nama Usaha</label>
                                     <input type="text" class="form-control" name="nama_usaha" value="<?= $ps['nama_usaha'] ?>" required>
+                                    <label>Sub Judul Usaha</label>
+                                    <input type="text" class="form-control" name="judul" value="<?= $ps['judul'] ?>" required>
                                     <label>Deskripsi Singkat Usaha</label>
                                     <textarea type="text" rows="5" class="form-control" name="deskripsi" required="required"><?= $ps['deskripsi'] ?></textarea>
                                     <label>Alamat</label>
@@ -47,27 +49,33 @@
                                     <input type="text" class="form-control" name="instagram" value="<?= $ps['instagram'] ?>">
                                     <label>Facebook</label>
                                     <input type="text" class="form-control" name="facebook" value="<?= $ps['facebook'] ?>">
-                                    <label>Maps Link</label><small>* Cara mengambil link maps? Klik disini</small>
+                                    <label>Maps Link</label>
                                     <textarea type="text" rows="5" class="form-control" name="maps_link"><?= $ps['maps_link'] ?></textarea>
                             </div>
-                            <label class="font-weight-bold">Gambar Slide Show Restoran pada Homepage:</label><br>
+                            <label class="font-weight-bold">Gambar Tentang Kami</label><br>
                             <div class="row">
-                                <div class="col-sm-4">
+                                <div class="col-sm-3">
                                     <div class="text-center">
-                                        <img class="m-3" src="<?= base_url() ?>assets/dataresto/foto_usaha/<?= $ps['foto_usaha_1'] ?>" width="100%"><br>
+                                        <img class="m-3" src="<?= base_url() ?>assets/img/<?= $ps['foto_usaha_1'] ?>" width="100%"><br>
                                         Gambar 1
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-3">
                                     <div class="text-center">
-                                        <img class="m-3" src="<?= base_url() ?>assets/dataresto/foto_usaha/<?= $ps['foto_usaha_2'] ?>" width="100%"><br>
+                                        <img class="m-3" src="<?= base_url() ?>assets/img/<?= $ps['foto_usaha_2'] ?>" width="100%"><br>
                                         Gambar 2
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-3">
                                     <div class="text-center">
-                                        <img class="m-3" src="<?= base_url() ?>assets/dataresto/foto_usaha/<?= $ps['foto_usaha_3'] ?>" width="100%"><br>
+                                        <img class="m-3" src="<?= base_url() ?>assets/img/<?= $ps['foto_usaha_3'] ?>" width="100%"><br>
                                         Gambar 3
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="text-center">
+                                        <img class="m-3" src="<?= base_url() ?>assets/img/<?= $ps['foto_usaha_4'] ?>" width="100%"><br>
+                                        Gambar 4
                                     </div>
                                 </div>
                             </div>
@@ -78,6 +86,8 @@
                                 <label for="exampleFormControlFile1">Gambar 2</label>
                                 <input type="file" class="form-control-file" name="foto_usaha_2" accept=".jpg, .jpeg, .png">
                                 <label for="exampleFormControlFile1">Gambar 3</label>
+                                <input type="file" class="form-control-file" name="foto_usaha_3" accept=".jpg, .jpeg, .png">
+                                <label for="exampleFormControlFile1">Gambar 4</label>
                                 <input type="file" class="form-control-file" name="foto_usaha_3" accept=".jpg, .jpeg, .png">
                                 <button type="submit" class="btn btn-primary mt-3">Edit Profil Usaha</button>
                                 </form>

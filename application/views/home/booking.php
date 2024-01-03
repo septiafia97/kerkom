@@ -1,26 +1,16 @@
-<main id="main">
-
-  <!-- ======= Breadcrumbs ======= -->
-  <section id="breadcrumbs" class="breadcrumbs">
-    <div class="container">
-
-      <div class="d-flex justify-content-between align-items-center">
-        <h2>Reservasi Meja & Booking Menu</h2>
-        <ol>
-          <li><a href="<?= base_url() ?>">Home</a></li>
-          <li>Reservasi Meja & Booking Menu</li>
-        </ol>
-      </div>
-
-    </div>
-  </section><!-- End Breadcrumbs -->
+  <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Reservasi</h1>
+                </div>
+            </div>
+        </div>
 
   <!-- ======= Contact Us Section ======= -->
   <section id="contact-us" class="contact-us">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <h3>Formulir Reservasi Meja & Booking Menu</h3>
+          <h3>Reservasi Meja & Booking Menu</h3>
           <p>Isi data dengan lengkap dan benar</p>
           <div class="form-group mb-2">
             <label>Nama Panggilan/Lengkap</label>

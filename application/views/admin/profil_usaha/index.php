@@ -57,11 +57,19 @@
                             }
                             ?>
                             <br>
-                            <label class="font-weight-bold">Gambar Slide Show Restoran pada Homepage:</label><br>
+                            <label class="font-weight-bold">Gambar Menu Populer :</label><br>
                             <div class="text-center">
-                                <img class="m-3" src="<?= base_url() ?>assets/dataresto/foto_usaha/<?= $ps['foto_usaha_1'] ?>" width="50%">
-                                <img class="m-3" src="<?= base_url() ?>assets/dataresto/foto_usaha/<?= $ps['foto_usaha_2'] ?>" width="50%">
-                                <img class="m-3" src="<?= base_url() ?>assets/dataresto/foto_usaha/<?= $ps['foto_usaha_3'] ?>" width="50%">
+                                <img class="m-3" src="<?= base_url() ?>assets/img/<?= $ps['menu_1'] ?>" width="20%">
+                                <img class="m-3" src="<?= base_url() ?>assets/img/<?= $ps['menu_2'] ?>" width="20%">
+                                <img class="m-3" src="<?= base_url() ?>assets/img/<?= $ps['menu_3'] ?>" width="20%">
+                            </div>
+                            <br>
+                            <label class="font-weight-bold">Gambar About :</label><br>
+                            <div class="text-center">
+                                <img class="m-3" src="<?= base_url() ?>assets/img/<?= $ps['foto_usaha_1'] ?>" width="20%">
+                                <img class="m-3" src="<?= base_url() ?>assets/img/<?= $ps['foto_usaha_2'] ?>" width="20%">
+                                <img class="m-3" src="<?= base_url() ?>assets/img/<?= $ps['foto_usaha_3'] ?>" width="20%">
+                                <img class="m-3" src="<?= base_url() ?>assets/img/<?= $ps['foto_usaha_4'] ?>" width="20%">
                             </div>
                         <?php
                     } ?>

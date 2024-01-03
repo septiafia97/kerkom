@@ -2,10 +2,7 @@
 <footer class="footer pt-0">
     <div class="row align-items-center justify-content-lg-between">
         <div class="col-lg-6">
-            <div class="copyright text-center  text-lg-left  text-muted">
-                &copy; 2021 Bojonegoro Squad | Repost by <a href='https://stokcoding.com/' title='StokCoding.com' target='_blank'>StokCoding.com</a>
-				
-            </div>
+            <div class="copyright text-center  text-lg-left  text-muted">by. Web Programming II | <a href=#>Kelompok 4</a></div>
         </div>
     </div>
 </footer>

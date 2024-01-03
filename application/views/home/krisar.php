@@ -1,19 +1,13 @@
 <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-        <div class="container">
-
-            <div class="d-flex justify-content-between align-items-center">
-                <h2>Kritik & Saran</h2>
-                <ol>
-                    <li><a href="<?= base_url() ?>">Home</a></li>
-                    <li>Kritik Saran</li>
-                </ol>
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Kritik & Saran</h1>
+                </div>
             </div>
-
         </div>
-    </section><!-- End Breadcrumbs -->
+    <!-- End Breadcrumbs -->
 
     <!-- ======= Contact Us Section ======= -->
     <section id="contact-us" class="contact-us">

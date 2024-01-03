@@ -15,6 +15,7 @@ class Home extends CI_Controller
         $getProfil = $this->db->query("SELECT * FROM profil_usaha");
         foreach ($getProfil->result_array() as $profil) {
             $arr['nama_usaha'] = $profil['nama_usaha'];
+            $arr['judul'] = $profil['judul'];
             $arr['deskripsi'] = $profil['deskripsi'];
             $arr['alamat'] = $profil['alamat'];
             $arr['nomor_telepon'] = $profil['nomor_telepon'];
@@ -24,6 +25,10 @@ class Home extends CI_Controller
             $arr['foto_usaha_1'] = $profil['foto_usaha_1'];
             $arr['foto_usaha_2'] = $profil['foto_usaha_2'];
             $arr['foto_usaha_3'] = $profil['foto_usaha_3'];
+            $arr['foto_usaha_4'] = $profil['foto_usaha_4'];
+            $arr['menu_1'] = $profil['menu_1'];
+            $arr['menu_2'] = $profil['menu_2'];
+            $arr['menu_3'] = $profil['menu_3'];
         }
         return $arr;
     }
@@ -33,6 +38,7 @@ class Home extends CI_Controller
         $profil = $this->getProfilUsaha();
         $data['gambar_menu'] = $this->Gambarmenu_model->getAllGambar();
         $data['nama_usaha'] = $profil['nama_usaha'];
+        $data['judul'] = $profil['judul'];
         $data['deskripsi'] = $profil['deskripsi'];
         $data['alamat'] = $profil['alamat'];
         $data['nomor_telepon'] = $profil['nomor_telepon'];
@@ -40,10 +46,16 @@ class Home extends CI_Controller
         $data['facebook'] = $profil['facebook'];
         $data['maps_link'] = $profil['maps_link'];
 
-        // Khusus Slider
+        // Khusus About
         $data['foto_usaha_1'] = $profil['foto_usaha_1'];
         $data['foto_usaha_2'] = $profil['foto_usaha_2'];
         $data['foto_usaha_3'] = $profil['foto_usaha_3'];
+        $data['foto_usaha_4'] = $profil['foto_usaha_4'];
+
+        // Khusus Menu Populer
+        $data['menu_1'] = $profil['menu_1'];
+        $data['menu_2'] = $profil['menu_2'];
+        $data['menu_3'] = $profil['menu_3'];
 
         $this->load->view('home/layout/header', $data);
         $this->load->view('home/index');

@@ -1,20 +1,5 @@
 <main id="main">
 
-  <!-- ======= Breadcrumbs ======= -->
-  <section id="breadcrumbs" class="breadcrumbs">
-    <div class="container">
-
-      <div class="d-flex justify-content-between align-items-center">
-        <h2>Events</h2>
-        <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>Events</li>
-        </ol>
-      </div>
-
-    </div>
-  </section><!-- End Breadcrumbs -->
-
   <!-- ======= Event List Section ======= -->
   <section id="event-list" class="event-list">
     <div class="container">
@@ -33,7 +18,7 @@
                   $gambar = $gambarm['gambar'];
                 }
                 ?>
-                <img style="object-fit: cover;height:400px;width:100%" src="<?php echo base_url('assets/dataresto/menu/' . $gambar) ?>" />
+                <img style="object-fit: cover;height:400px;width:100%" src="<?php echo base_url('assets/img/' . $gambar) ?>" />
               </div>
               <div class="card-body">
                 <h5 class="card-title"><?= $m['nama_menu'] ?></h5>

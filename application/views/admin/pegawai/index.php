@@ -93,9 +93,9 @@
                 <form action="<?= base_url() ?>admin/tambah_pegawai" method="POST">
                     <div class="form-group">
                         <label>Nama Pegawai</label>
-                        <input type="text" class="form-control" placeholder="Ahmad Surbakti" name="nama" required>
+                        <input type="text" class="form-control" placeholder="Nur Wonu" name="nama" required>
                         <label>Email</label>
-                        <input type="text" class="form-control" placeholder="ahmadsurbakti@gmail.com" name="email" required>
+                        <input type="text" class="form-control" placeholder="nurwonu@gmail.com" name="email" required>
                         <label>Password</label>
                         <input type="password" class="form-control" placeholder="minimum 5 karakter" name="password" required>
                         <label>Jenis Kelamin</label>
@@ -105,9 +105,9 @@
                             <option>Perempuan</option>
                         </select>
                         <label>Alamat</label>
-                        <input type="text" class="form-control" placeholder="Jl. Untung surapati, Ledok Kulon, Bojonegoro" name="alamat" required>
+                        <input type="text" class="form-control" placeholder="Jl. Seventeen 17" name="alamat" required>
                         <label>Telepon</label>
-                        <input type="text" class="form-control" placeholder="081258980012" name="telepon" required>
+                        <input type="text" class="form-control" placeholder="081xxxxxxxxx" name="telepon" required>
                     </div>
             </div>
             <div class="modal-footer">

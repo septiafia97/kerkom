@@ -66,7 +66,7 @@
                                     <tr>
                                         <td>
                                             <center>
-                                                <img width="350px" src="<?= base_url() ?>assets/dataresto/menu/<?= $gb['gambar'] ?>" alt="Gambar <?= $gb['nama_menu'] ?>">
+                                                <img width="350px" src="<?= base_url() ?>assets/img/<?= $gb['gambar'] ?>" alt="Gambar <?= $gb['nama_menu'] ?>">
                                             </center>
                                         </td>
                                         <td>
