@@ -17,7 +17,7 @@
                                 <?php
                                 if ($mk['gambar'] != 'Tidak Ada Gambar') {
                                 ?>
-                                    <img src="<?php echo base_url('assets/dataresto/makanan/' . $mk['gambar']) ?>" width="40%" />
+                                    <img src="<?php echo base_url('assets/img/' . $mk['gambar']) ?>" width="40%" />
                                 <?php
                                 } else {
                                 ?>

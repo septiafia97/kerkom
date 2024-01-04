@@ -1,3 +1,22 @@
+<?php
+$query = mysqli_connect('localhost', 'root', '', 'db_mieayam');
+$sql = 'SELECT total_pembayaran FROM booking';
+
+$result = mysqli_query($query, $sql);
+
+// number_format((float)$total_pendapatan->total_pendapatan, 0, ',', '.')
+
+// $total_pem = array_sum(mysqli_fetch_assoc($result));
+// var_dump(mysqli_fetch_assoc($result));
+$total = [];
+while ($row=mysqli_fetch_assoc($result)) {
+  $total[] = $row['total_pembayaran'];
+}
+
+$total_pem=array_sum($total);
+// var_dump(mysqli_fetch_assoc($result));
+?>
+
 <div class="header bg-primary pb-6">
   <div class="container-fluid">
     <div class="header-body">
@@ -19,7 +38,7 @@
             <div class="row">
               <div class="col">
                 <h5 class="card-title text-uppercase text-muted mb-0">Pemasukan Bulan Ini</h5>
-                <span class="h2 font-weight-bold mb-0">Rp. <?= number_format($total_pendapatan_bulan_ini->total_pendapatan_bulan_ini, 0, ',', '.') ?></span>
+                <span class="h2 font-weight-bold mb-0">Rp. <?= $total_pem ?></span>
               </div>
               <div class="col-auto">
                 <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
@@ -39,7 +58,7 @@
             <div class="row">
               <div class="col">
                 <h5 class="card-title text-uppercase text-muted mb-0">Pemasukan Hari Ini</h5>
-                <span class="h2 font-weight-bold mb-0">Rp. <?= number_format($total_pendapatan->total_pendapatan, 0, ',', '.')  ?></span>
+                <span class="h2 font-weight-bold mb-0">Rp. <?= $total_pem  ?></span>
               </div>
               <div class="col-auto">
                 <div class="icon icon-shape bg-warning text-white rounded-circle shadow">

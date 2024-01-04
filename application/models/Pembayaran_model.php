@@ -28,7 +28,7 @@ class pembayaran_model extends CI_Model
             foreach ($getDataGambar->result_array() as $gambar) {
                 $gambar_bukti = $gambar['bukti_pembayaran'];
             }
-            $pathFBukti = "assets/dataresto/bukti_bayar/";
+            $pathFBukti = "assets/datawarung/bukti_bayar/";
             unlink($pathFBukti . $gambar_bukti);
             $data = [
                 "bukti_pembayaran" => "Gambar Salah"
@@ -69,7 +69,7 @@ class pembayaran_model extends CI_Model
         } else {
             $file_name = $_FILES['bukti_pembayaran']['name'];
             $newfile_name = str_replace(' ', '', $file_name);
-            $config['upload_path']          = './assets/dataresto/booking/';
+            $config['upload_path']          = './assets/datawarung/booking/';
             $config['allowed_types']        = 'jpg|png';
             $newName = date('dmYHis') . $newfile_name;
             $config['file_name']         = $newName;

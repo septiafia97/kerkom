@@ -53,7 +53,7 @@ class Makanan_model extends CI_Model
 
     public function delete($id)
     {
-        $pathMenu = "assets/dataresto/menu/";
+        $pathMenu = "assets/img";
         $getDataGambar = $this->db->query("SELECT * FROM gambar_menu WHERE id_menu = $id");
         foreach ($getDataGambar->result_array() as $gambar) {
             unlink($pathMenu . $gambar['gambar']);

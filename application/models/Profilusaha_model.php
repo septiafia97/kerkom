@@ -52,7 +52,7 @@ class Profilusaha_model extends CI_Model
 
     public function edit_profil_usaha()
     {
-        $pathFUsaha = "assets/dataresto/foto_usaha/";
+        $pathFUsaha = "assets/img/";
         $current_usaha = $this->input->post('current_id');
         $getDataGambar = $this->db->query("SELECT * FROM profil_usaha WHERE id = $current_usaha");
 
@@ -65,7 +65,7 @@ class Profilusaha_model extends CI_Model
         if ($_FILES['foto_usaha_1']['size'] != 0) {
             $file_name1 = $_FILES['foto_usaha_1']['name'];
             $newfile_name1 = str_replace(' ', '', $file_name1);
-            $config['upload_path']          = './assets/dataresto/foto_usaha';
+            $config['upload_path']          = './assets/img/';
             $newName = date('dmYHis') .  $newfile_name1;
             $config['file_name']         = $newName;
             $config['max_size']             = 10100;
@@ -88,7 +88,7 @@ class Profilusaha_model extends CI_Model
         if ($_FILES['foto_usaha_2']['size'] != 0) {
             $file_name2 = $_FILES['foto_usaha_2']['name'];
             $newfile_name2 = str_replace(' ', '', $file_name2);
-            $config1['upload_path']          = './assets/dataresto/foto_usaha';
+            $config1['upload_path']          = './assets/img';
             $newName1 = date('dmYHis') .  $newfile_name2;
             $config1['file_name']         = $newName1;
             $config1['max_size']             = 10100;
@@ -111,7 +111,7 @@ class Profilusaha_model extends CI_Model
         if ($_FILES['foto_usaha_3']['size'] != 0) {
             $file_name3 = $_FILES['foto_usaha_3']['name'];
             $newfile_name3 = str_replace(' ', '', $file_name3);
-            $config2['upload_path']          = './assets/dataresto/foto_usaha';
+            $config2['upload_path']          = './assets/img';
             $newName2 = date('dmYHis') .  $newfile_name3;
             $config2['file_name']         = $newName2;
             $config2['max_size']             = 10100;

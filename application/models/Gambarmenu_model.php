@@ -20,7 +20,7 @@ class Gambarmenu_model extends CI_Model
     {
         $file_name = $_FILES['gambar_menu']['name'];
         $newfile_name = str_replace(' ', '', $file_name);
-        $config['upload_path']          = './assets/dataresto/menu/';
+        $config['upload_path']          = './assets/img';
         $config['allowed_types']        = 'jpg|png';
         $newName = date('dmYHis') . $newfile_name;
         $config['file_name']         = $newName;
@@ -43,7 +43,7 @@ class Gambarmenu_model extends CI_Model
 
     public function hapus_gambar($id_gambar)
     {
-        $pathGambarMenu = "assets/dataresto/menu/";
+        $pathGambarMenu = "assets/img/";
         $getDataGambar = $this->db->query("SELECT * FROM gambar_menu WHERE id_gambar = $id_gambar");
         foreach ($getDataGambar->result_array() as $gambar) {
             $gambar_menu = $gambar['gambar'];
