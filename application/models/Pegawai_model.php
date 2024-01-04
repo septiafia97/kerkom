@@ -53,7 +53,9 @@ class Pegawai_model extends CI_Model
         $data = [
             'nama' => $this->input->post('nama'),
             'alamat' => $this->input->post('alamat'),
-            'telepon' => $this->input->post('telepon')
+            'telepon' => $this->input->post('telepon'),
+            'email' => $this->input->post('email'),
+            'jenis_kelamin' => $this->input->post('jenis_kelamin')
         ];
         $this->db->where('id_pegawai', $this->input->post('id_pegawai'));
         $this->db->update('pegawai', $data);

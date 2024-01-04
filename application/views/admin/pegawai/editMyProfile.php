@@ -36,7 +36,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="textarea-input" class=" form-control-label">Email</label>
-                                <input disabled value="<?= $mk['email'] ?>" type="text" required class="form-control" name="email" placeholder="">
+                                <input value="<?= $mk['email'] ?>" type="text" required class="form-control" name="email" placeholder="Email Anda">
                             </div>
                             <div class="form-group">
                                 <label for="textarea-input" class=" form-control-label">Alamat</label>
@@ -48,7 +48,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="textarea-input" class=" form-control-label">Jenis Kelamin</label>
-                                <input disabled value="<?= $mk['jenis_kelamin'] ?>" type="text" required class="form-control" name="jenis_kelamin" placeholder="">
+                                <input disable value="<?= $mk['jenis_kelamin'] ?>" type="text" required class="form-control" name="jenis_kelamin" placeholder="">
                             </div>
                             <div class="text-center mb-3">
                                 <a href="<?= base_url() ?>admin" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-left"></i> Back</a>

@@ -60,6 +60,10 @@ class Profilusaha_model extends CI_Model
             $gambar1_old = $gambar['foto_usaha_1'];
             $gambar2_old = $gambar['foto_usaha_2'];
             $gambar3_old = $gambar['foto_usaha_3'];
+            $gambar4_old = $gambar['foto_usaha_4'];
+            $gambar5_old = $gambar['menu_1'];
+            $gambar6_old = $gambar['menu_2'];
+            $gambar7_old = $gambar['menu_3'];
         }
 
         if ($_FILES['foto_usaha_1']['size'] != 0) {
@@ -124,6 +128,98 @@ class Profilusaha_model extends CI_Model
                 }
                 $data = [
                     'foto_usaha_3' => $newName2
+                ];
+
+                $this->db->where('id', $current_usaha);
+                $this->db->update('profil_usaha', $data);
+            }
+        }
+
+        if ($_FILES['foto_usaha_4']['size'] != 0) {
+            $file_name4 = $_FILES['foto_usaha_4']['name'];
+            $newfile_name4 = str_replace(' ', '', $file_name4);
+            $config3['upload_path']          = './assets/img/';
+            $newName3 = date('dmYHis') .  $newfile_name4;
+            $config3['file_name']         = $newName3;
+            $config3['max_size']             = 10100;
+            $config3['allowed_types']        = 'jpg|png|jpeg';
+            $this->load->library('upload', $config3);
+            $this->upload->initialize($config3);
+            if ($this->upload->do_upload('foto_usaha_4')) {
+                if ($gambar4_old != "4.jpg") {
+                    unlink($pathFUsaha . $gambar4_old);
+                }
+                $data = [
+                    'foto_usaha_4' => $newName3
+                ];
+
+                $this->db->where('id', $current_usaha);
+                $this->db->update('profil_usaha', $data);
+            }
+        }
+
+        if ($_FILES['menu_1']['size'] != 0) {
+            $file_name5 = $_FILES['menu_1']['name'];
+            $newfile_name5 = str_replace(' ', '', $file_name5);
+            $config4['upload_path']          = './assets/img/';
+            $newName4 = date('dmYHis') .  $newfile_name5;
+            $config4['file_name']         = $newName4;
+            $config4['max_size']             = 10100;
+            $config4['allowed_types']        = 'jpg|png|jpeg';
+            $this->load->library('upload', $config4);
+            $this->upload->initialize($config4);
+            if ($this->upload->do_upload('menu_1')) {
+                if ($gambar5_old != "1.jpg") {
+                    unlink($pathFUsaha . $gambar5_old);
+                }
+                $data = [
+                    'menu_1' => $newName4
+                ];
+
+                $this->db->where('id', $current_usaha);
+                $this->db->update('profil_usaha', $data);
+            }
+        }
+
+        if ($_FILES['menu_2']['size'] != 0) {
+            $file_name6 = $_FILES['menu_1']['name'];
+            $newfile_name6 = str_replace(' ', '', $file_name6);
+            $config5['upload_path']          = './assets/img/';
+            $newName5 = date('dmYHis') .  $newfile_name6;
+            $config5['file_name']         = $newName5;
+            $config5['max_size']             = 10100;
+            $config5['allowed_types']        = 'jpg|png|jpeg';
+            $this->load->library('upload', $config5);
+            $this->upload->initialize($config5);
+            if ($this->upload->do_upload('menu_2')) {
+                if ($gambar6_old != "1.jpg") {
+                    unlink($pathFUsaha . $gambar6_old);
+                }
+                $data = [
+                    'menu_2' => $newName5
+                ];
+
+                $this->db->where('id', $current_usaha);
+                $this->db->update('profil_usaha', $data);
+            }
+        }
+
+        if ($_FILES['menu_3']['size'] != 0) {
+            $file_name7 = $_FILES['menu_3']['name'];
+            $newfile_name7 = str_replace(' ', '', $file_name7);
+            $config6['upload_path']          = './assets/img/';
+            $newName6 = date('dmYHis') .  $newfile_name7;
+            $config6['file_name']         = $newName6;
+            $config6['max_size']             = 10100;
+            $config6['allowed_types']        = 'jpg|png|jpeg';
+            $this->load->library('upload', $config6);
+            $this->upload->initialize($config6);
+            if ($this->upload->do_upload('menu_3')) {
+                if ($gambar7_old != "1.jpg") {
+                    unlink($pathFUsaha . $gambar7_old);
+                }
+                $data = [
+                    'menu_1' => $newName6
                 ];
 
                 $this->db->where('id', $current_usaha);

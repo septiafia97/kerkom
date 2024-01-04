@@ -22,6 +22,10 @@ class Katalog extends CI_Controller
             $arr['foto_usaha_1'] = $profil['foto_usaha_1'];
             $arr['foto_usaha_2'] = $profil['foto_usaha_2'];
             $arr['foto_usaha_3'] = $profil['foto_usaha_3'];
+            $arr['foto_usaha_4'] = $profil['foto_usaha_4'];
+            $arr['menu_1'] = $profil['menu_1'];
+            $arr['menu_2'] = $profil['menu_2'];
+            $arr['menu_3'] = $profil['menu_3'];
         }
         return $arr;
     }

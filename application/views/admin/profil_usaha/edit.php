@@ -52,6 +52,36 @@
                                     <label>Maps Link</label>
                                     <textarea type="text" rows="5" class="form-control" name="maps_link"><?= $ps['maps_link'] ?></textarea>
                             </div>
+                            <label class="font-weight-bold">Gambar Menu Populer</label><br>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="text-center">
+                                        <img class="m-3" src="<?= base_url() ?>assets/img/<?= $ps['menu_1'] ?>" width="100%"><br>
+                                        Gambar 1
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="text-center">
+                                        <img class="m-3" src="<?= base_url() ?>assets/img/<?= $ps['menu_2'] ?>" width="100%"><br>
+                                        Gambar 2
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="text-center">
+                                        <img class="m-3" src="<?= base_url() ?>assets/img/<?= $ps['menu_3'] ?>" width="100%"><br>
+                                        Gambar 3
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <small>* Jika tidak ingin mengganti gambar silahkan kosongi.</small><br>
+                                <label for="exampleFormControlFile1">Gambar 1</label>
+                                <input type="file" class="form-control-file" name="menu_1" accept=".jpg, .jpeg, .png">
+                                <label for="exampleFormControlFile1">Gambar 2</label>
+                                <input type="file" class="form-control-file" name="menu_2" accept=".jpg, .jpeg, .png">
+                                <label for="exampleFormControlFile1">Gambar 3</label>
+                                <input type="file" class="form-control-file" name="menu_3" accept=".jpg, .jpeg, .png">
+                            </div>
                             <label class="font-weight-bold">Gambar Tentang Kami</label><br>
                             <div class="row">
                                 <div class="col-sm-3">
@@ -88,7 +118,7 @@
                                 <label for="exampleFormControlFile1">Gambar 3</label>
                                 <input type="file" class="form-control-file" name="foto_usaha_3" accept=".jpg, .jpeg, .png">
                                 <label for="exampleFormControlFile1">Gambar 4</label>
-                                <input type="file" class="form-control-file" name="foto_usaha_3" accept=".jpg, .jpeg, .png">
+                                <input type="file" class="form-control-file" name="foto_usaha_4" accept=".jpg, .jpeg, .png">
                                 <button type="submit" class="btn btn-primary mt-3">Edit Profil Usaha</button>
                                 </form>
                             </div>
