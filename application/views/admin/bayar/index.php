@@ -102,7 +102,7 @@
                 </button>
             </div>
             <div class="modal-body">
-            <img id="buktipembayaran" name="buktipembayaran" src="<?php echo base_url('assets/dataresto/booking/' . $mk['bukti_pembayaran']) ?>" width="40%" />
+            <img id="buktipembayaran" name="buktipembayaran" src="<?php echo base_url('assets/datawarung/booking/' . $mk['bukti_pembayaran']) ?>" width="40%" />
             </div>
             
         </div>

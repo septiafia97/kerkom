@@ -94,7 +94,7 @@ class pembayaran_model extends CI_Model
 
         $file_name1 = $_FILES['bukti_pembayaran']['name'];
         $newfile_name1 = str_replace(' ', '', $file_name1);
-        $config['upload_path']          = './assets/dataresto/bukti_bayar';
+        $config['upload_path']          = './assets/datawarung/bukti_bayar';
         $newName = date('dmYHis') .  $newfile_name1;
         $config['file_name']         = $newName;
         $config['max_size']             = 10100;
