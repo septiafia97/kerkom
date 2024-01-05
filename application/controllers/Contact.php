@@ -13,6 +13,7 @@ class Contact extends CI_Controller
         $getProfil = $this->db->query("SELECT * FROM profil_usaha");
         foreach ($getProfil->result_array() as $profil) {
             $arr['nama_usaha'] = $profil['nama_usaha'];
+            $arr['email'] = $profil['email'];
             $arr['alamat'] = $profil['alamat'];
             $arr['nomor_telepon'] = $profil['nomor_telepon'];
             $arr['maps_link'] = $profil['maps_link'];
@@ -25,6 +26,7 @@ class Contact extends CI_Controller
     {
         $profil = $this->getProfilUsaha();
         $data['nama_usaha'] = $profil['nama_usaha'];
+        $data['email'] = $profil['email'];
         $data['alamat'] = $profil['alamat'];
         $data['nomor_telepon'] = $profil['nomor_telepon'];
         $data['instagram'] = $profil['instagram'];

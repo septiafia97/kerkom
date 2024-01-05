@@ -35,6 +35,7 @@
                 <div class="col-lg-6 pt-4 pt-lg-0">
                     <ul>
                         <li>Alamat : <?= $alamat ?></li>
+                        <li>Email : <?= $email ?></li>
                         <li>No Telepon : <?= $nomor_telepon ?></li>
                         <li>Instagram : <a href="https://instagram.com/<?= $instagram ?>">@<?= $instagram ?></a></li>
                         <li>Facebook : <a href="https://facebook.com/<?= $instagram ?>"><?= $facebook ?></a></li>
