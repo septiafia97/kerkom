@@ -64,7 +64,7 @@
                                 <img class="m-3" src="<?= base_url() ?>assets/img/<?= $ps['menu_3'] ?>" width="20%">
                             </div>
                             <br>
-                            <label class="font-weight-bold">Gambar About :</label><br>
+                            <label class="font-weight-bold">Gambar Menu Lain :</label><br>
                             <div class="text-center">
                                 <img class="m-3" src="<?= base_url() ?>assets/img/<?= $ps['foto_usaha_1'] ?>" width="20%">
                                 <img class="m-3" src="<?= base_url() ?>assets/img/<?= $ps['foto_usaha_2'] ?>" width="20%">

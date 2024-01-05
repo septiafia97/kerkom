@@ -20,8 +20,8 @@
                             <i class="ni ni-zoom-split-in"></i>
                         </a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <!-- <li class="nav-item dropdown"> -->
+                        <!-- <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="ni ni-ungroup"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-dark bg-default  dropdown-menu-right ">
@@ -64,8 +64,8 @@
                                 </a>
                             </div>
                         </div>
-                    </li>
-                </ul>
+                    </li> -->
+                <!-- </ul> -->
                 <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
                     <li class="nav-item dropdown">
                         <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

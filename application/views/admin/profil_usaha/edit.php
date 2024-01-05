@@ -82,7 +82,7 @@
                                 <label for="exampleFormControlFile1">Gambar 3</label>
                                 <input type="file" class="form-control-file" name="menu_3" accept=".jpg, .jpeg, .png">
                             </div>
-                            <label class="font-weight-bold">Gambar Tentang Kami</label><br>
+                            <label class="font-weight-bold">Gambar Menu Lain</label><br>
                             <div class="row">
                                 <div class="col-sm-3">
                                     <div class="text-center">
